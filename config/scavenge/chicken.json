@@ -1,0 +1,589 @@
+{
+	"block_pools" :
+	[
+		{
+			"name": "Grass",
+			"type":
+			{
+				"type": "block",
+				"name": "minecraft:grass"
+			},
+			"clicktype": "right",
+			"properties":
+			[
+				{
+					"type": "require_sneak"
+				},
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.gravel.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:manaresource",
+					"meta": 21,
+					"amount": 2
+				}
+			]
+		},
+		{
+			"name": "Dirt",
+			"type":
+			{
+				"type": "block",
+				"name": "minecraft:dirt"
+			},
+			"clicktype": "right",
+			"properties":
+			[
+				{
+					"type": "require_sneak"
+				},
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.gravel.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:manaresource",
+					"meta": 21,
+					"amount": 2
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1"
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"messages":
+			[
+				{
+					"id": "success",
+					"message": "You must break the root with Empty Hand"
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1",
+				"meta": 0
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower1",
+					"meta": 0
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1",
+				"meta": 1
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower1",
+					"meta": 1
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1",
+				"meta": 2
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower1",
+					"meta": 2
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1",
+				"meta": 3
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower1",
+					"meta": 3
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1",
+				"meta": 4
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower1",
+					"meta": 4
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1",
+				"meta": 5
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower1",
+					"meta": 5
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1",
+				"meta": 6
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower1",
+					"meta": 6
+				}
+			]
+		},
+		{
+			"name": "Doubleflower",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower1",
+				"meta": 7
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower1",
+					"meta": 7
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2"
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"messages":
+			[
+				{
+					"id": "success",
+					"message": "You must break the root with Empty Hand"
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2",
+				"meta": 0
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower2",
+					"meta": 0
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2",
+				"meta": 1
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower2",
+					"meta": 1
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2",
+				"meta": 2
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower2",
+					"meta": 2
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2",
+				"meta": 3
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower2",
+					"meta": 3
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2",
+				"meta": 4
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower2",
+					"meta": 4
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2",
+				"meta": 5
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower2",
+					"meta": 5
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2",
+				"meta": 6
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower2",
+					"meta": 6
+				}
+			]
+		},
+		{
+			"name": "Doubleflower2",
+			"type":
+			{
+				"type": "block",
+				"name": "botania:doubleflower2",
+				"meta": 7
+			},
+			"clicktype": "break",
+			"properties":
+			[
+				{
+					"type": "require_empty_Hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.grass.break",
+					"volume": 0.2,
+					"pitch": 2.0
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "botania:doubleflower2",
+					"meta": 7
+				}
+			]
+		}
+	]
+}
