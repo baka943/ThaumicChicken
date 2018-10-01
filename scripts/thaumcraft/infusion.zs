@@ -13,3 +13,7 @@ Infusion.registerRecipe("terrasteelchicken", "", <roost:chicken>.withTag({Growth
 
 #Elementium Chicken
 Infusion.registerRecipe("elementiumchicken", "", <roost:chicken>.withTag({Growth: 10, Chicken: "morechickens:elementiumchicken", Gain: 10, Strength: 10}), 50, [ap.metallum * 100, ap.praecantatio * 200], <roost:chicken>.withTag({Growth: 10, Chicken: "morechickens:manasteelchicken", Gain: 10, Strength: 10}), [<ore:ingotElvenElementium>, <ore:runeManaB>, <forge:bucketfilled>.withTag({FluidName: "fluidedmana", Amount: 1000})]);
+
+#Cake
+recipes.remove(<minecraft:cake>);
+Infusion.registerRecipe("cake", "", <minecraft:cake>, 150, [ap.victus * 150, ap.desiderium * 150, ap.potentia * 150], <minecraft:egg>, [<minecraft:milk_bucket>, <minecraft:milk_bucket>, <minecraft:milk_bucket>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>]);

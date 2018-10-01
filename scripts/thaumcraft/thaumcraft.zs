@@ -10,7 +10,7 @@ val vis as string[] = ["aer", "terra", "ignis", "aqua", "ordo", "perditio"];
 #Vis Crystal
 val viscrystal as IIngredient[][int] = {
 	0 : [<ore:powderMana>, <ore:petalYellow>, <ore:feather>, <ore:blockGlass>, <rootsclassic:verdantsprig>],
-	1 : [<ore:powderMana>, <ore:petalGreen>,<rootsclassic:oldroot>, <ore:blockGlass>, <rootsclassic:verdantsprig>],
+	1 : [<ore:powderMana>, <ore:petalGreen>, <rootsclassic:oldroot>, <ore:blockGlass>, <rootsclassic:verdantsprig>],
 	2 : [<ore:powderMana>, <ore:petalRed>, <minecraft:fire_charge>, <ore:blockGlass>, <rootsclassic:verdantsprig>],
 	3 : [<ore:powderMana>, <ore:petalBlue>, <ore:sugarcane>, <ore:blockGlass>, <rootsclassic:verdantsprig>],
 	4 : [<ore:powderMana>, <ore:petalWhite>, <minecraft:comparator>, <ore:blockGlass>, <rootsclassic:verdantsprig>],

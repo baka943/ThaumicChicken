@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.entity.IEntityDefinition;
 
 import mods.jei.JEI;
 
@@ -19,10 +20,10 @@ import crafttweaker.event.EntityLivingFallEvent;
 
 #Dyes
 val dye as IOreDictEntry[] = [<ore:dyeWhite>, <ore:dyeOrange>, <ore:dyeMagenta>, <ore:dyeLightBlue>, <ore:dyeYellow>, <ore:dyeLime>, <ore:dyePink>, <ore:dyeGray>, <ore:dyeLightGray>, <ore:dyeCyan>, <ore:dyePurple>, <ore:dyeBlue>, <ore:dyeBrown>, <ore:dyeGreen>, <ore:dyeRed>, <ore:dyeBlack>];
-val floraldyesDef = <botania:dye>.definition;
+val bdyesDef = <botania:dye>.definition;
 
 for i, item in dye {
-	item.remove(floraldyesDef.makeStack(i));
+	item.remove(bdyesDef.makeStack(i));
 }
 
 //==================================
@@ -31,13 +32,69 @@ for i, item in dye {
 
 #Welcome Message
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
-    event.player.sendChat("Hello player! Enjoy your game!");
+	event.player.sendChat("Hello player! Enjoy your game!");
 });
 
 #Feather Fall
 events.onEntityLivingFall(function(event as EntityLivingFallEvent) {
     event.damageMultiplier = 0.0;
 });
+
+//==================================
+######## Entitys ########
+//==================================
+
+#Clear Drops
+val cleardrops as IEntityDefinition[] = [
+	<entity:minecraft:blaze>,
+	<entity:minecraft:cave_spider>,
+	<entity:minecraft:chicken>,
+	<entity:minecraft:cow>,
+	<entity:minecraft:creeper>,
+	<entity:minecraft:donkey>,
+	<entity:minecraft:elder_guardian>,
+	<entity:minecraft:enderman>,
+	<entity:minecraft:endermite>,
+	<entity:minecraft:ghast>,
+	<entity:minecraft:giant>,
+	<entity:minecraft:guardian>,
+	<entity:minecraft:horse>,
+	<entity:minecraft:husk>,
+	<entity:minecraft:llama>,
+	<entity:minecraft:magma_cube>,
+	<entity:minecraft:mooshroom>,
+	<entity:minecraft:mule>,
+	<entity:minecraft:ocelot>,
+	<entity:minecraft:parrot>,
+	<entity:minecraft:pig>,
+	<entity:minecraft:polar_bear>,
+	<entity:minecraft:rabbit>,
+	<entity:minecraft:sheep>,
+	<entity:minecraft:shulker>,
+	<entity:minecraft:silverfish>,
+	<entity:minecraft:skeleton>,
+	<entity:minecraft:skeleton_horse>,
+	<entity:minecraft:slime>,
+	<entity:minecraft:snowman>,
+	<entity:minecraft:spider>,
+	<entity:minecraft:squid>,
+	<entity:minecraft:stray>,
+	<entity:minecraft:vex>,
+	<entity:minecraft:villager>,
+	<entity:minecraft:villager_golem>,
+	<entity:minecraft:witch>,
+	<entity:minecraft:wither>,
+	<entity:minecraft:wither_skeleton>,
+	<entity:minecraft:wolf>,
+	<entity:minecraft:zombie>,
+	<entity:minecraft:zombie_horse>,
+	<entity:minecraft:zombie_pigman>,
+	<entity:minecraft:zombie_villager>
+];
+
+for entity in cleardrops {
+	entity.clearDrops();
+}
 
 //==================================
 ######## Removal ########
@@ -52,7 +109,7 @@ events.onEntityLivingFall(function(event as EntityLivingFallEvent) {
 recipes.replaceAllOccurences(<minecraft:iron_nugget>, <thaumcraft:nugget>);
 
 //==================================
-######## JEI Hide ########
+######## JEI ########
 //==================================
 
 val itemstack as IItemStack[] = [
@@ -110,15 +167,18 @@ for i in 5 .. 15 {
 }
 
 #Cobblestone
-recipes.addShaped(<minecraft:cobblestone>, [[<ore:pebble>, <ore:pebble>], [<ore:pebble>, <ore:pebble>]]);
+recipes.addShaped("cobblestone", <minecraft:cobblestone>, [[<ore:pebble>, <ore:pebble>], [<ore:pebble>, <ore:pebble>]]);
 
 #Oak Sapling
-recipes.addShapeless(<minecraft:sapling>, [<minecraft:dye:15>, <rootsclassic:oldroot>, <rootsclassic:oldroot>, <rootsclassic:oldroot>, <rootsclassic:oldroot>]);
+recipes.addShapeless("oak_sapling", <minecraft:sapling>, [<minecraft:dye:15>, <rootsclassic:oldroot>, <rootsclassic:oldroot>, <rootsclassic:oldroot>, <rootsclassic:oldroot>]);
 
 #Bowl
 recipes.remove(<minecraft:bowl>);
-recipes.addShaped(<minecraft:bowl> * 2, [[<ore:plankWood>, null, <ore:plankWood>], [null, <ore:plankWood>]]);
+recipes.addShaped("bowl", <minecraft:bowl> * 2, [[<ore:plankWood>, null, <ore:plankWood>], [null, <ore:plankWood>]]);
 
 #Beacon
 recipes.remove(<minecraft:beacon>);
-recipes.addShaped(<minecraft:beacon>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], [<ore:blockGlass>, <minecraft:sea_lantern>, <ore:blockGlass>], [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+recipes.addShaped("beacon", <minecraft:beacon>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], [<ore:blockGlass>, <minecraft:sea_lantern>, <ore:blockGlass>], [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+
+#Quartz
+recipes.addShaped("quartz", <minecraft:quartz>, [[<ore:nuggetQuartz>, <ore:nuggetQuartz>, <ore:nuggetQuartz>], [<ore:nuggetQuartz>, <ore:nuggetQuartz>, <ore:nuggetQuartz>], [<ore:nuggetQuartz>, <ore:nuggetQuartz>, <ore:nuggetQuartz>]]);

@@ -14,4 +14,4 @@ ArcaneWorkbench.registerShapelessRecipe("salis_mundus", "", 150, [ap.aer, ap.aqu
 
 #TNT
 recipes.remove(<minecraft:tnt>);
-ArcaneWorkbench.registerShapedRecipe("tnt", "", 50, [ap.ignis * 10, ap.perditio * 10], <minecraft:tnt>, [[<minecraft:gunpowder>, <ore:sand>, <minecraft:gunpowder>], [<ore:sand>, <minecraft:gunpowder>, <ore:sand>], [<minecraft:gunpowder>, <ore:sand>, <minecraft:gunpowder>]]);
+ArcaneWorkbench.registerShapedRecipe("tnt", "", 150, [ap.ignis * 10, ap.perditio * 10], <minecraft:tnt>, [[<minecraft:gunpowder>, <ore:sand>, <minecraft:gunpowder>], [<ore:sand>, <minecraft:gunpowder>, <ore:sand>], [<minecraft:gunpowder>, <ore:sand>, <minecraft:gunpowder>]]);

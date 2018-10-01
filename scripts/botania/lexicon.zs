@@ -2,7 +2,7 @@
 #Author: baka943
 
 import mods.botania.Lexicon;
-import scripts.botania.botania.specialflower;
+import scripts.botania.apothecary.specialflower;
 
 //==================================
 ######## Removal ########
@@ -80,7 +80,15 @@ Lexicon.addPetalPage("Sowing of the fool.", "botania.entry.moonbless", 1, [<bota
 Lexicon.removePage("botania.entry.clayconia", 1);
 Lexicon.addPetalPage("&oWhat a killer joke&r.", "botania.entry.clayconia", 1, [<botania:specialflower>.withTag({type: "clayconia"})], [specialflower.clayconia]);
 
+#Rafflowsia
+Lexicon.removePage("botania.entry.rafflowsia", 1);
+Lexicon.addPetalPage("&oA New Dawn, you could say&r.", "botania.entry.rafflowsia", 1, [<botania:specialflower>.withTag({type: "rafflowsia"})], [specialflower.rafflowsia]);
+
 #Fertilizer
 Lexicon.removePage("botania.entry.flowers", 8);
-Lexicon.removePage("botania.entry.flowers", 7);
+Lexicon.removePage("botania.entry.flowers", 5);
 Lexicon.addCraftingPage("Making fertilizer (Refer to JEI!)", "botania.entry.flowers", 7, ["crafttweaker:fertilizer"]);
+
+#Rune of Winter
+Lexicon.removePage("botania.entry.runeAltar", 14);
+Lexicon.addRunePage("The &1Rune of Winter&0.", "botania.entry.runeAltar", 14, [<botania:rune:7>], [[<ore:runeWaterB>, <ore:runeEarthB>, <minecraft:snow>, <minecraft:snow>, <minecraft:wool>, <minecraft:ice>]], [8000]);

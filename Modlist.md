@@ -72,8 +72,6 @@
 
 [Scavenge](https://minecraft.curseforge.com/projects/scavenge) by Speiger
 
-[Smooth Font](https://minecraft.curseforge.com/projects/smooth-font) by bre2el(Optional)
-
 [SourceBottles](https://minecraft.curseforge.com/projects/source-bottles) by Bennyboy1695
 
 [Storage Drawers](https://minecraft.curseforge.com/projects/storage-drawers) by jaquadro
